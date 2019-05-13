@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'kirilenko.easymock'
+version '1.0-SNAPSHOT'
+group 'kirilenko.easymock'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.easymock', name: 'easymock', version: '4.0.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+}
